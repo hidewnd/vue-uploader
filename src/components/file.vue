@@ -109,7 +109,7 @@
         return type
       },
       progressStyle () {
-        const progress = Math.floor(this.progress * 100)
+        const progress = Math.floor(props.file.progress() * 100)
         const style = `translateX(${Math.floor(progress - 100)}%)`
         return {
           progress: `${progress}%`,
